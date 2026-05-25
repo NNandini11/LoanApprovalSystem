@@ -1,0 +1,182 @@
+{
+  "A001": {
+    "applicant_id": "A001",
+    "name": "Asha Patel",
+    "email": "asha.patel@example.com",
+    "phone": "+91-98000-00001",
+    "credit_history": {
+      "open_accounts": 3,
+      "closed_accounts": 5,
+      "late_payments_12mo": 0,
+      "defaults": 0,
+      "oldest_account_years": 12,
+      "summary": "Strong, well-aged credit history with no delinquencies."
+    },
+    "income_history": {
+      "stable_months": 60,
+      "salary_variance_pct": 4.0
+    }
+  },
+  "A002": {
+    "applicant_id": "A002",
+    "name": "Ben Carter",
+    "email": "ben.carter@example.com",
+    "phone": "+1-415-555-0102",
+    "credit_history": {
+      "open_accounts": 4,
+      "closed_accounts": 2,
+      "late_payments_12mo": 1,
+      "defaults": 0,
+      "oldest_account_years": 6,
+      "summary": "Solid credit profile with one isolated late payment."
+    },
+    "income_history": {
+      "stable_months": 36,
+      "salary_variance_pct": 8.0
+    }
+  },
+  "A003": {
+    "applicant_id": "A003",
+    "name": "Chen Wei",
+    "email": "chen.wei@example.com",
+    "phone": "+86-10-5555-0103",
+    "credit_history": {
+      "open_accounts": 5,
+      "closed_accounts": 8,
+      "late_payments_12mo": 0,
+      "defaults": 0,
+      "oldest_account_years": 15,
+      "summary": "Excellent long-running credit, multiple paid-off lines."
+    },
+    "income_history": {
+      "stable_months": 84,
+      "salary_variance_pct": 3.0
+    }
+  },
+  "A004": {
+    "applicant_id": "A004",
+    "name": "Diana Rojas",
+    "email": "diana.rojas@example.com",
+    "phone": "+52-55-5555-0104",
+    "credit_history": {
+      "open_accounts": 6,
+      "closed_accounts": 1,
+      "late_payments_12mo": 2,
+      "defaults": 0,
+      "oldest_account_years": 4,
+      "summary": "Moderate history, two late payments this year, no defaults."
+    },
+    "income_history": {
+      "stable_months": 18,
+      "salary_variance_pct": 22.0
+    }
+  },
+  "A005": {
+    "applicant_id": "A005",
+    "name": "Ethan Moore",
+    "email": "ethan.moore@example.com",
+    "phone": "+1-212-555-0105",
+    "credit_history": {
+      "open_accounts": 2,
+      "closed_accounts": 1,
+      "late_payments_12mo": 0,
+      "defaults": 0,
+      "oldest_account_years": 2,
+      "summary": "Thin file, short history but clean."
+    },
+    "income_history": {
+      "stable_months": 24,
+      "salary_variance_pct": 6.0
+    }
+  },
+  "A006": {
+    "applicant_id": "A006",
+    "name": "Farah Haddad",
+    "email": "farah.haddad@example.com",
+    "phone": "+971-4-555-0106",
+    "credit_history": {
+      "open_accounts": 4,
+      "closed_accounts": 3,
+      "late_payments_12mo": 0,
+      "defaults": 0,
+      "oldest_account_years": 9,
+      "summary": "Good credit, consistent on-time payments."
+    },
+    "income_history": {
+      "stable_months": 48,
+      "salary_variance_pct": 5.0
+    }
+  },
+  "A007": {
+    "applicant_id": "A007",
+    "name": "Gabriel Souza",
+    "email": "gabriel.souza@example.com",
+    "phone": "+55-11-5555-0107",
+    "credit_history": {
+      "open_accounts": 7,
+      "closed_accounts": 4,
+      "late_payments_12mo": 5,
+      "defaults": 2,
+      "oldest_account_years": 8,
+      "summary": "Distressed file: multiple late payments and two defaults in last 24 months."
+    },
+    "income_history": {
+      "stable_months": 9,
+      "salary_variance_pct": 35.0
+    }
+  },
+  "A008": {
+    "applicant_id": "A008",
+    "name": "Hiroko Tanaka",
+    "email": "hiroko.tanaka@example.com",
+    "phone": "+81-3-5555-0108",
+    "credit_history": {
+      "open_accounts": 3,
+      "closed_accounts": 6,
+      "late_payments_12mo": 0,
+      "defaults": 0,
+      "oldest_account_years": 18,
+      "summary": "Exemplary credit, long tenure, zero adverse events."
+    },
+    "income_history": {
+      "stable_months": 120,
+      "salary_variance_pct": 2.0
+    }
+  },
+  "A009": {
+    "applicant_id": "A009",
+    "name": "Ivan Petrov",
+    "email": "ivan.petrov@example.com",
+    "phone": "+7-495-555-0109",
+    "credit_history": {
+      "open_accounts": 5,
+      "closed_accounts": 2,
+      "late_payments_12mo": 3,
+      "defaults": 1,
+      "oldest_account_years": 5,
+      "summary": "Mixed history, one default 18 months ago, late payments recent."
+    },
+    "income_history": {
+      "stable_months": 12,
+      "salary_variance_pct": 28.0
+    }
+  },
+  "A010": {
+    "applicant_id": "A010",
+    "name": "Julia Novak",
+    "email": "julia.novak@example.com",
+    "phone": "+48-22-555-0110",
+    "credit_history": {
+      "open_accounts": 4,
+      "closed_accounts": 4,
+      "late_payments_12mo": 1,
+      "defaults": 0,
+      "oldest_account_years": 7,
+      "summary": "Generally healthy credit with one minor late payment."
+    },
+    "income_history": {
+      "stable_months": 42,
+      "salary_variance_pct": 7.0
+    }
+  }
+}

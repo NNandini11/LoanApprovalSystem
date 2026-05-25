@@ -1,0 +1,17 @@
+INFO:     Started server process [10405]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59244 - "GET /health HTTP/1.1" 200 OK
+2026-05-22 16:01:19,580 [applicant_profile_agent] INFO analyze applicant_id=A001
+2026-05-22 16:01:19,749 [applicant_profile_agent] INFO profile result: {'income_stability_score': 0.968, 'employment_risk': 'low', 'credit_history_summary': 'Strong, well-aged credit history with no delinquencies.', 'application_completeness_flags': []}
+INFO:     127.0.0.1:41476 - "POST /analyze HTTP/1.1" 200 OK
+2026-05-22 16:04:41,350 [applicant_profile_agent] INFO analyze applicant_id=A001
+2026-05-22 16:04:41,517 [applicant_profile_agent] INFO profile result: {'income_stability_score': 0.968, 'employment_risk': 'low', 'credit_history_summary': 'Strong, well-aged credit history with no delinquencies.', 'application_completeness_flags': []}
+INFO:     127.0.0.1:51582 - "POST /analyze HTTP/1.1" 200 OK
+2026-05-22 16:07:37,204 [applicant_profile_agent] INFO analyze applicant_id=A001
+2026-05-22 16:07:37,376 [applicant_profile_agent] INFO profile result: {'income_stability_score': 0.968, 'employment_risk': 'low', 'credit_history_summary': 'Strong, well-aged credit history with no delinquencies.', 'application_completeness_flags': []}
+INFO:     127.0.0.1:58090 - "POST /analyze HTTP/1.1" 200 OK
+2026-05-22 16:09:16,036 [applicant_profile_agent] INFO analyze applicant_id=A001
+2026-05-22 16:09:16,149 [applicant_profile_agent] INFO profile result: {'income_stability_score': 0.968, 'employment_risk': 'high', 'credit_history_summary': 'Strong, well-aged credit history with no delinquencies.', 'application_completeness_flags': []}
+INFO:     127.0.0.1:35678 - "POST /analyze HTTP/1.1" 200 OK

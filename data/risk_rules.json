@@ -1,0 +1,41 @@
+{
+  "dti_thresholds": {
+    "low": 0.35,
+    "medium": 0.50,
+    "high_above": 0.50,
+    "notes": "Debt-to-income ratio = (existing_liabilities + new_loan_monthly_payment * 12) / annual_income"
+  },
+  "credit_score_bands": [
+    {"band": "excellent", "min": 750, "max": 850, "risk_level": "low"},
+    {"band": "good",      "min": 700, "max": 749, "risk_level": "low"},
+    {"band": "fair",      "min": 650, "max": 699, "risk_level": "medium"},
+    {"band": "poor",      "min": 600, "max": 649, "risk_level": "high"},
+    {"band": "very_poor", "min": 300, "max": 599, "risk_level": "high"}
+  ],
+  "loan_amount_rules": {
+    "low_multiplier_of_income_max": 3.0,
+    "medium_multiplier_of_income_max": 5.0,
+    "notes": "loan_amount / annual_income > 5.0 is high risk; > 3.0 is medium; otherwise low"
+  },
+  "anomaly_rules": [
+    {"id": "AGE_RETIRED_LONG_TENURE", "description": "Applicant > 60 with tenure > 120 months"},
+    {"id": "INCOME_VARIANCE_HIGH",    "description": "Salary variance > 20% indicates unstable income"},
+    {"id": "RECENT_DEFAULTS",         "description": "Any default in past 24 months"},
+    {"id": "LOAN_VS_INCOME_EXTREME",  "description": "Loan amount > 10x annual income"},
+    {"id": "UNEMPLOYED_APPLICANT",    "description": "Employment type is unemployed"}
+  ],
+  "decision_policy": {
+    "auto_approve_if": {
+      "credit_score_min": 720,
+      "dti_max": 0.35,
+      "anomalies_max": 0
+    },
+    "auto_reject_if_any_of": {
+      "credit_score_below": 580,
+      "dti_above": 0.65,
+      "defaults_in_last_24mo_min": 1,
+      "loan_to_income_ratio_above": 8.0
+    },
+    "otherwise": "Requires Manual Review"
+  }
+}

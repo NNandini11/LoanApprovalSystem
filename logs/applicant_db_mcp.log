@@ -1,0 +1,79 @@
+INFO:     Started server process [10399]
+INFO:     Waiting for application startup.
+[05/22/26 16:00:42] INFO     StreamableHTTP       streamable_http_manager.py:128
+                             session manager                                    
+                             started                                            
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:9001 (Press CTRL+C to quit)
+[05/22/26 16:01:19] INFO     Created new          streamable_http_manager.py:255
+                             transport with                                     
+                             session ID:                                        
+                             59312c22d419421dada8                               
+                             9e1098ed0d32                                       
+INFO:     127.0.0.1:41754 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41756 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:41758 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41770 - "POST /mcp HTTP/1.1" 200 OK
+                    INFO     Processing request of type            server.py:727
+                             CallToolRequest                                    
+INFO:     127.0.0.1:41780 - "POST /mcp HTTP/1.1" 200 OK
+                    INFO     Processing request of type            server.py:727
+                             ListToolsRequest                                   
+                    INFO     Terminating session:         streamable_http.py:785
+                             59312c22d419421dada89e1098ed                       
+                             0d32                                               
+INFO:     127.0.0.1:41796 - "DELETE /mcp HTTP/1.1" 200 OK
+[05/22/26 16:04:41] INFO     Created new          streamable_http_manager.py:255
+                             transport with                                     
+                             session ID:                                        
+                             3cac622e14e342d9a814                               
+                             c14ae6e9fc30                                       
+INFO:     127.0.0.1:41992 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41996 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:41998 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42000 - "POST /mcp HTTP/1.1" 200 OK
+                    INFO     Processing request of type            server.py:727
+                             CallToolRequest                                    
+INFO:     127.0.0.1:42012 - "POST /mcp HTTP/1.1" 200 OK
+                    INFO     Processing request of type            server.py:727
+                             ListToolsRequest                                   
+                    INFO     Terminating session:         streamable_http.py:785
+                             3cac622e14e342d9a814c14ae6e9                       
+                             fc30                                               
+INFO:     127.0.0.1:42024 - "DELETE /mcp HTTP/1.1" 200 OK
+[05/22/26 16:07:37] INFO     Created new          streamable_http_manager.py:255
+                             transport with                                     
+                             session ID:                                        
+                             1aa58b48ef1f4e0ca95f                               
+                             0e02562455e3                                       
+INFO:     127.0.0.1:49888 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49904 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:49918 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49920 - "POST /mcp HTTP/1.1" 200 OK
+                    INFO     Processing request of type            server.py:727
+                             CallToolRequest                                    
+INFO:     127.0.0.1:49928 - "POST /mcp HTTP/1.1" 200 OK
+                    INFO     Processing request of type            server.py:727
+                             ListToolsRequest                                   
+                    INFO     Terminating session:         streamable_http.py:785
+                             1aa58b48ef1f4e0ca95f0e025624                       
+                             55e3                                               
+INFO:     127.0.0.1:49934 - "DELETE /mcp HTTP/1.1" 200 OK
+[05/22/26 16:09:16] INFO     Created new          streamable_http_manager.py:255
+                             transport with                                     
+                             session ID:                                        
+                             a3d6fced54d8466692bd                               
+                             b872925094ef                                       
+INFO:     127.0.0.1:41786 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41794 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:41796 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41798 - "POST /mcp HTTP/1.1" 200 OK
+                    INFO     Processing request of type            server.py:727
+                             CallToolRequest                                    
+INFO:     127.0.0.1:41806 - "POST /mcp HTTP/1.1" 200 OK
+                    INFO     Processing request of type            server.py:727
+                             ListToolsRequest                                   
+                    INFO     Terminating session:         streamable_http.py:785
+                             a3d6fced54d8466692bdb8729250                       
+                             94ef                                               
+INFO:     127.0.0.1:41808 - "DELETE /mcp HTTP/1.1" 200 OK

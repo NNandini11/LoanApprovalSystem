@@ -6,7 +6,7 @@ demo can show a tamper-evident audit trail.
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
@@ -20,7 +20,7 @@ mcp = FastMCP("DecisionSynthesis", host="127.0.0.1", port=9003)
 @mcp.tool()
 def log_decision(decision: dict) -> dict:
     """Append a decision record (JSON line) and return the stored envelope."""
-    envelope = {"logged_at": datetime.utcnow().isoformat() + "Z", "decision": decision}
+    envelope = {"logged_at": datetime.now(timezone.utc).isoformat(), "decision": decision}
     with open(LOG_FILE, "a") as fh:
         fh.write(json.dumps(envelope) + "\n")
     return envelope

@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
@@ -24,7 +24,7 @@ def mint_case_id() -> str:
 def send_notification(recipient: str, subject: str, body: str, channel: str = "email") -> dict:
     """Send (mock) a notification and persist it to the audit log."""
     record = {
-        "sent_at": datetime.utcnow().isoformat() + "Z",
+        "sent_at": datetime.now(timezone.utc).isoformat(),
         "channel": channel,
         "recipient": recipient,
         "subject": subject,

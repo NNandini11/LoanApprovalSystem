@@ -1,10 +1,14 @@
 """Pydantic models shared across the gateway, orchestrator, and agents."""
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
+
+
+def _utcnow() -> datetime:
+    return datetime.now(timezone.utc)
 
 
 EmploymentType = Literal["salaried", "self_employed", "contractor", "unemployed", "retired"]
@@ -22,7 +26,7 @@ class LoanApplication(BaseModel):
     loan_tenure_months: int = Field(ge=6, le=480)
     existing_liabilities: float = Field(ge=0)
     location: str
-    application_timestamp: datetime = Field(default_factory=datetime.utcnow)
+    application_timestamp: datetime = Field(default_factory=_utcnow)
 
 
 class ApplicantProfileResult(BaseModel):

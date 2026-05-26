@@ -6,7 +6,7 @@ MCP, and returns the compliance/action summary.
 from __future__ import annotations
 
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import FastAPI
@@ -95,7 +95,7 @@ async def analyze(payload: ComplianceInput) -> ComplianceActionResult:
         action_taken=action_taken,
         notification_sent=notification_sent,
         case_id=case_id,
-        timestamp=datetime.utcnow(),
+        timestamp=datetime.now(timezone.utc),
         summary=(
             f"Case {case_id}: {payload.decision.classification} for applicant "
             f"{payload.application.applicant_id}. Notification {'sent' if notification_sent else 'NOT sent'} "
